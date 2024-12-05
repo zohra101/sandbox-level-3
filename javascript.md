@@ -50,8 +50,12 @@ function outputDefault(message, outputTag = "outputTag") {
     window[outputTag].innerHTML += message;
 }
 ```
+```javascript
+function output(message="", outputTag = "outputTag", shouldAppend = true)
+```
 - Parameters can automatically be given a default value.
 - When an undefined value.
+- By specifying default parameter values in functions, VSCode automatically pops up information about what type each parameter should be. 
 
 ### If else
 ```javascript
@@ -102,8 +106,3 @@ else output ("Not yet done");
   - arrays `[]`
   - objects
 
-### Parameter types
-```javascript
-function output(message="", outputTag = "outputTag", shouldAppend = true)
-```
-- By specifying parameter values in functions, VSCode automatically pops up information about what type each parameter should be. 
