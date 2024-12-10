@@ -1,6 +1,6 @@
 //
-function outputBasic(message) {
-    window[outputTag].innerHTML += message;
+function output(message) {
+    window.outputTag.innerHTML += message;
 }
 
 //
@@ -12,3 +12,4 @@ function outputSpecifiedId(message, outputTag) {
 function outputDefault(message, outputTag = "outputTag") {
     window[outputTag].innerHTML += message;
 }
+
