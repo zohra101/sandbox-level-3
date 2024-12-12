@@ -1,3 +1,10 @@
+// function forofExample () {
+//     const myArray = ["Hello world!", 2024, truel;
+//     for (let item of myArray) {
+//     output] ${item) ID;
+//     }
+// }
+
 function forOfExample()
 /***********************************
 * HOW TO ITERATE THROUGH ALL THE
@@ -10,6 +17,7 @@ function forOfExample()
 {
     debugger;
         const myArray = ["Hello world!", 2024, true];
+        
         for (let item of myArray)
             output(`${item}<br>`);
 }

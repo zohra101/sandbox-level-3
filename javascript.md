@@ -7,6 +7,7 @@ Create an empty array.
 Push values into the array.
 `myArray.push("array");`
 `myArray.push(234);`
+`myArray.push(false);`
 
 ### Window object
   ```javascript
@@ -130,7 +131,7 @@ for (let item of list)
 3. Use the keyword `in`.
 4. Add the object.
 
-### this method
+### This method
 `this. innerHTML`
 
 ```javascript
@@ -170,3 +171,4 @@ function thisExample() {
 `output (myObject. toString());`
 - The toString method is used to customize how an object is displayed.
 - The toString is automatically called when the object is being used like a string.
+
