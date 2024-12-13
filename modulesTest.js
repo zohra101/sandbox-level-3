@@ -1,16 +1,28 @@
-
-
-
+/**********************************
+* - MODULES ALLOW THE CODE IN A JAVASCRIPT FILE TO BE USED IN OTHER JAVASCRIPT FILES
+* - MODULES USE THE KEYWORD import TO ACCESS CODE FROM ANOTHER JS FILE
+* - USE A PAIR OF CURLY BRACES AND INSERT THE MODULE NAME
+* - INCLUDE THE PATH OF THE FILE IN QUOTES
+* - USE A DOT AND A FORWARD SLASH TO REPRESENT THE CURRENT FOLDER (relative path notation)
+* - THE HTML type ATTRIBUTE MUST BE SET TO module
+* <script src="modulesTest.js" type="module"> </script>
+* - A module MUST BE ATTACHED TO WINDOW OBJECT TO BE USED IN AN HTML FILE
+* - IT'S ONLY NECESSARY TO ATTACH A MODULE TO THE WINDOW OBJECT
+* IF THE MODULE WILL BE DIRECTLY USED BY THE HTML FILE
+* - THE PROPERTY NAME DOESN'T NEED TO MATCH THE MODULE NAME
+* - THE MODULE MUST BE CALLED BY THE NAME ATTACHED TO THE WINDOW OBJECT
+**********************************/
 
 //LOOK IN THE CURRENT FOLDER FOR THE FILE module. js
-import { myModule } from "./module.js";
-import { outputModule } from "./outputModule.js";
-// window.moduleExample = moduleExample;
-window.moduleExample = myExampile;
-// function moduleExample() {
-function myExample () {
-debugger;
-myModule ( );
-outputModule ("Hello world!");
+import { myModule } from "./modules.js";
+import { outputModule } from "./utility-functions.js";
+
+//USE AN OBJECT PROPERTY TO ATTACH THE MODULE TO THE WINDOW OBJECT
+window.moduleExample = moduleExample;
+
+//DEFINE THE MODULE
+function moduleExample() {
+    myModule();
+    outputModule("Hello world!");
 }
 

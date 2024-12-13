@@ -6,25 +6,48 @@ class Column {
     info(columnNumber) {
         console.log("This is column " + columnNumber);
     }
+
+    constructor() {
+        console. log("You ve constructed a Column.")
+    }
+
+
 }
 
 class Car {
     color = "red";
+
+    // constructor() {
+    //     console.log{"A new car was created."};
+    // }
+
+    constructor (newColor = "") {
+        this.color = newColor;
+        }
+
     honkHorn () {
     // IN A CLASS, THE function KEYWORD IN NOT USED FOR METHODS
-    console.log("Honk honk!");
+        console.log("Honk honk!");
     }
 
     info() {
+    /****************************
+    * USE THE KEYWORD this TO ACCESS
+    * PROPERTIES AND METHODS FROM WITHIN
+    * AN OBJECT
+    *****************************/
         console.log("The color is " + this.color);
     }
 
     toString() {
+    /****************************
+    * THE toString METHOD CUSTOMIZES
+    * HOW AN OBJECT IS OUTPUT.
+    *****************************/
         return "This car's color is " + this.color;
     }
 
 }
-
 
 function classExample() {
     debugger;
@@ -44,18 +67,22 @@ function methodExample() {
     *****************************/
     const myCar = new Car();
     myCar.honkHorn() ;
-
 }
 
 function thisExample() {
     debugger;
     /****************************
-    * A METHOD IS A FUNCTION IN AN OBJECT OR CLASS
-    * IN A CLASS, THE function KEYWORD IN NOT USED FOR METHODS
+    * USE THE KEYWORD this TO ACCESS
+    * PROPERTIES AND METHODS FROM WITHIN
+    * AN OBJECT
     *****************************/
     const car1 = new Car();
     const car2 = new Car();
     const car3 = new Car();
+
+    car1.color = "silver";
+    car2.color = "white";
+    car3.color = "black";
 
     car1.info();
     car2.info();
@@ -65,8 +92,11 @@ function thisExample() {
 function toStringExample() {
     debugger;
     /****************************
-    * THE toString METHOD CUSTOMIZES
+    * - THE toString METHOD CUSTOMIZES
     * HOW AN OBJECT IS OUTPUT.
+    * - THIS METHOD IS AUTOMATICALLY CALLED 
+    * WHEN THE OBJECT IS USED LIKE A STRING. 
+    * - RETURN THE STRING WHICH SHOULD BE THE OUTPUT.
     *****************************/
     const myCar = new Car();
     myCar.honkHorn() ;
@@ -81,5 +111,5 @@ debugger;
 * AUTOMATICALLY RUNS WHEN THE OBJECT IS CREATED
 * IT CAN ACCEPT PARAMETERS FOR THE OBJECT
 *************/
-const column = new Column ("I'm column 1");
+    const column = new Column ("A new object was created.");
 }

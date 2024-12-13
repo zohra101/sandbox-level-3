@@ -107,7 +107,7 @@ else output ("Not yet done");
   - arrays `[]`
   - objects
 
-### For of loop
+### Loop - for of
 ```javascript
 for (let item of list)
 ```
@@ -120,7 +120,7 @@ for (let item of list)
 3. Use the keyword `of`.
 4. Add the array.
 
-### For in loop
+### Loop - for in
 ```javascript
  for (let property in myLists)
  ```
@@ -131,8 +131,8 @@ for (let item of list)
 3. Use the keyword `in`.
 4. Add the object.
 
-### This method
-`this. innerHTML`
+### Method - this
+`this.innerHTML`
 
 ```javascript
 function info() {
@@ -167,8 +167,33 @@ function thisExample() {
 
 - Directly displaying an object to the browser shows [Object object].
 
-### Method to string
+### Method - toString
 `output (myObject. toString());`
 - The toString method is used to customize how an object is displayed.
 - The toString is automatically called when the object is being used like a string.
 
+### Method - constructor
+- Every class has a constructor even if you dont make it.
+- it's basically an empty function that will still run and does nothing.
+- The constructor can accept parameters for the object and initializes values.
+- 
+#### Example:
+```javascript
+function constructorExample() {
+    const column = new Column("I'm column 1.");
+    console.log("This is the content.")
+}
+```
+### Property chaining for objects
+`const cylinderCount = myCar. components.engine.parts.cylinders.count;`
+
+- Using object dot notation, properties can be chained together.
+- Access deeper property levels with just one line.
+
+### Item chaining for arrays
+`const value = myArrays[0][2];`
+
+- Using array notation, items and properties can be chained together.
+- Access deeper array levels with just one line.
+
+  

@@ -1,10 +1,10 @@
 ## Modules
 - Allows the code in a JavaScript file to be used in other JavaScript files.
-- Uses the keywords export and import
+- Uses the keywords export and import.
 
 ### Keyword export
 `export function myFunction();`
-- Allows code to be used in other JavaScript files.
+- Makes code usable in other JavaScript files.
 
 #### Example:
 ```javascript
@@ -14,20 +14,21 @@ export function myModule() {
 ```
 
 ### Keyword import
-`import { myFunction } from " /module.js";`
+`import { myFunction } from " ./module.js";`
 
-- Uses code from another JavaScript file
-- The dot means the current folder
+- Uses code from another JavaScript file.
+- The ./ is the relative path that means the current folder.
 - 
 #### SYNTAX:
-- use a pair of curly braces
-- insert the module name
-- use the keyword from
-- include the path of the file in quotes ""
-- use a dot and a forward slash to represent the current folder
-- RELATIVE PATH NOTATION uses the dot and forward slash
-- the type attribute must be set to "module"
-`<script src="moduleTest.js" type="module"></script>`
+- use a pair of curly braces.
+- insert the module name.
+- use the keyword from.
+- include the path of the file in quotes "".
+- use a dot and a forward slash to represent the current folder.
+- RELATIVE PATH NOTATION uses the dot and forward slash.
+- the type attribute must be set to "module".
+`<script src="./modules.js" type="module"></script>`
+`<script src="./modulesTest.js" type="module"></script>`
 
 #### Example:
 ```javascript
@@ -47,10 +48,14 @@ function moduleExample() {
 - The module must be called by the name attached to the window object.
   
 ### Function Hoisting
+`window.moduleExample = moduleExample;`
+
 - JavaScript invisibly brings function definitions to the top.
 - Functions can be called before they are defined in a file.
 
 ### Object Oriented Programming
+`const column = new Column("my content");`
+
 - Create objects that bundle related data and functions together.
 - The keywords `class`, `new`, and `this` are used to achieve OOP.
 
