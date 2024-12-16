@@ -1,6 +1,6 @@
-class Column {
-    openingTag = `<div class = 'col' >`;
-    closingTag = `</div>"`;
+class Column1 {
+    openingTag = "<div class = 'col' >";
+    closingTag = "</div>";
     innerHTML = "";
 
     info(columnNumber) {
@@ -11,6 +11,21 @@ class Column {
         console. log("You ve constructed a Column.")
     }
 
+
+}
+
+class Column2 {
+    openingTag = `<div class = 'col' >`;
+    closingTag = `</div>"`;
+    innerHTML = "";
+
+    constructor(content="") {
+        this.innerHTML = content;
+    }
+
+    tostring() {
+        return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+    }
 
 }
 

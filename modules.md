@@ -71,6 +71,8 @@ function moduleExample() {
 - Usually only 1 function or class per file.
 
 ### Relative file paths
+- `./` Look in the current folder
+- `../` Go back one folder
 
 
 ### Module errors
@@ -86,3 +88,40 @@ function moduleExample() {
 2. Open the file that will import the module.
 3. Start typing the module name.
 4. Select the module from the popup list.
+
+### How to find the class of an object
+1. Use the debugger to explore the object.
+2. The class is in the [[Prototype]].
+
+### Node.js
+- A program that can run JavaScript files in the terminal.
+
+1. Go to https://nodejs.org.
+2. Download Node.js.
+3. Install Node.js with default options.
+
+### Named exports/imports
+- Must use curly braces
+- Must use the exact module name
+1. Make a greeting function that accepts a name and logs a greeting
+2. Import the greeting function and use it
+3. Run the module with node and observe the error
+
+### NPM
+- Node Package Manager
+- npm can manage dependencies.
+- npm can (in one command line) install all the dependencies of a project.
+  
+
+### How to configure Node js for modules
+- Initialize NPM.
+- `npm init`
+- Select the default options by pressing ENTER.
+- VS Code creates the package.json file. 
+
+### {} package.json
+- Configuration file for Node.js
+1. Initialize npm for the project.
+2. Review JSON in package.json.
+3. Add "type": "module" to package.json.
+4. Run the greeting module.

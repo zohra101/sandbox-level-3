@@ -185,10 +185,11 @@ function constructorExample() {
 }
 ```
 ### Property chaining for objects
-`const cylinderCount = myCar. components.engine.parts.cylinders.count;`
+`const value = myCar.components.engine.parts.cylinders.count;`
 
 - Using object dot notation, properties can be chained together.
 - Access deeper property levels with just one line.
+- Like accessing a file embedded in multiple folders.
 
 ### Item chaining for arrays
 `const value = myArrays[0][2];`
@@ -196,4 +197,26 @@ function constructorExample() {
 - Using array notation, items and properties can be chained together.
 - Access deeper array levels with just one line.
 
+### Event object properties
+`event = new Event()`
+
+- To view the properties of the event object, set the default parameter value.
+
+### Boolean Operators
+- `&&` and
+  - It returns true when both conditions are true.
+  - it returns false if both conditions are not true.
+  - it returns false if ANY of the conditions are false. 
   
+- `||` or
+  - It returns true if any of the conditions are true.
+  - It returns false if none of the conditions are true.
+  
+- `!` Not
+  - It returns the oppposite of the condition.
+  - It returns false if the condition is true.
+  - It returns true if the condition is false.
+  
+- `!==`Not equal
+  - It returns true if the condition is not equal.
+  - It returns false if the condition is equal.
