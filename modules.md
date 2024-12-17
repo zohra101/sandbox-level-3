@@ -76,7 +76,6 @@ function moduleExample() {
 
 
 ### Module errors
-
 #### Uncaught syntax error: Cannot use import statement outside a module
 - `type="module"` is missing from the `<script>` tag: 
 
@@ -95,24 +94,25 @@ function moduleExample() {
 
 ### Node.js
 - A program that can run JavaScript files in the terminal.
-
 1. Go to https://nodejs.org.
 2. Download Node.js.
 3. Install Node.js with default options.
 
-### Named exports/imports
-- Must use curly braces
-- Must use the exact module name
-1. Make a greeting function that accepts a name and logs a greeting
-2. Import the greeting function and use it
-3. Run the module with node and observe the error
+### Run JavaScript using Node.js
+`node greeting.js`
+`node ./controllers/greetingTest.js`
+- Must use curly braces.
+- Must use the exact module name.
+1. Make a greeting function that accepts a name and logs a greeting.
+2. Import the greeting function and use it.
+3. Run the module with `node` and observe the error.
+4.  Or use relative path notation: `node ./controllers/greetingTest.js`
 
 ### NPM
 - Node Package Manager
 - npm can manage dependencies.
 - npm can (in one command line) install all the dependencies of a project.
   
-
 ### How to configure Node js for modules
 - Initialize NPM.
 - `npm init`
