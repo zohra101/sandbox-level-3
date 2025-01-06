@@ -1,3 +1,9 @@
-import { greeting } from "../modules/greeting.js"
+import sayHiTo from "../modules/greeting.js";
+// import toNoCase from "to-no-case";
+// import camel from "to-camel-case"; 
+//import space from "to-space-case"; 
+// import space from "../node_modules/to-space-case/index.js"; 
 
-greeting("Alex");
+//const name = camel("Alex Marjanovic");
+const name = space("AlexMarjanovic");no
+sayHiTo (name) ;

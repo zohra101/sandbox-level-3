@@ -1,6 +1,3 @@
-export function greeting() {
-    console.log("Hello world!");
+export default function greeting(name) {
+    console.log(`Hello, ${name}!`);
 }
-
-
-
